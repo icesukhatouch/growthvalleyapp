@@ -1,6 +1,12 @@
 
 export default {
+  env: {  
+    strapiBaseUri: process.env.API_URL || "http://localhost:1337"
+  },
   mode: 'universal',
+  server: {
+    PORT : 5555
+  },
   /*
   ** Headers of the page
   */
@@ -13,7 +19,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Kanit|Roboto&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,600,700|Roboto:300,400,500,700&display=swap'}
     ]
   },
   /*
@@ -31,6 +37,12 @@ export default {
   */
   plugins: [
   ],
+
+// page transition
+  transition: {
+      name:'page',
+      mode: 'out-in'
+    },
   /*
   ** Nuxt.js dev-modules
   */
@@ -55,8 +67,23 @@ export default {
          }
        ]
       }
-]
+],
+'@nuxtjs/apollo',
+'@nuxtjs/markdownit'
   ],
+  apollo: {  
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.BACKEND_URL || 'http://localhost:1337/graphql'
+      }
+    }
+  },
+  markdownit: {  
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true
+  },
   /*
   ** Build configuration
   */

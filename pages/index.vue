@@ -12,7 +12,6 @@ import Logo from "~/components/Logo.vue";
 import Hero from "~/components/Hero.vue";
 import Body from "~/components/Body.vue";
 
-
 export default {
   components: {
     Logo,
@@ -21,7 +20,3 @@ export default {
   }
 };
 </script>
-
-<style>
-
-</style>

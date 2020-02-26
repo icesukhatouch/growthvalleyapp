@@ -1,0 +1,23 @@
+2020-02-05T12:56:11.543554000 0.017458s notice: Recursively removing directory /Users/sukhatouchdenkirati/development/projects/growthvalley/rethinkdb_data/tmp
+2020-02-05T12:56:11.545206000 0.019114s notice: Initializing directory /Users/sukhatouchdenkirati/development/projects/growthvalley/rethinkdb_data
+2020-02-05T12:56:11.545336000 0.019240s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/sukhatouchdenkirati/development/projects/growthvalley/rethinkdb_data' did not already exist or is empty.)
+2020-02-05T12:56:11.545374000 0.019277s notice: Running rethinkdb 2.4.0 (CLANG 11.0.0 (clang-1100.0.33.16))...
+2020-02-05T12:56:11.551046000 0.024950s notice: Running on Darwin 19.0.0 x86_64
+2020-02-05T12:56:11.551104000 0.025007s notice: Loading data from directory /Users/sukhatouchdenkirati/development/projects/growthvalley/rethinkdb_data
+2020-02-05T12:56:11.693862000 0.167761s info: Automatically using cache size of 168 MB
+2020-02-05T12:56:11.694434000 0.168333s notice: Listening for intracluster connections on port 29015
+2020-02-05T12:56:11.695769000 0.169668s notice: Listening for client driver connections on port 28015
+2020-02-05T12:56:11.695826000 0.169725s notice: Listening for administrative HTTP connections on port 8080
+2020-02-05T12:56:11.695832000 0.169731s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2020-02-05T12:56:11.695836000 0.169735s notice: Listening on driver addresses: 127.0.0.1, ::1
+2020-02-05T12:56:11.695840000 0.169739s notice: Listening on http addresses: 127.0.0.1, ::1
+2020-02-05T12:56:11.695844000 0.169743s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2020-02-05T12:56:11.695848000 0.169747s notice: Server ready, "Heisenberg_6wx" 605146a8-e6a8-478d-90ad-d52b2d0719e6
+2020-02-05T13:07:51.617728000 700.070631s info: Table cdf81c02-40e2-4af5-a7ef-cafc7c48367c: Starting a new Raft election for term 1.
+2020-02-05T13:07:51.618288000 700.071191s info: Table cdf81c02-40e2-4af5-a7ef-cafc7c48367c: Added replica on this server.
+2020-02-05T13:07:51.639821000 700.092723s info: Table cdf81c02-40e2-4af5-a7ef-cafc7c48367c: This server is Raft leader for term 1. Latest log index is 0.
+2020-02-05T16:36:13.039149000 9956.452576s notice: Server got SIGINT from pid 3306, uid 501; shutting down...
+2020-02-05T16:36:13.039690000 9956.453116s notice: Shutting down client connections...
+2020-02-05T16:36:13.041087000 9956.454513s notice: All client connections closed.
+2020-02-05T16:36:13.041093000 9956.454520s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2020-02-05T16:36:13.055861000 9956.469287s notice: Storage engine shut down.

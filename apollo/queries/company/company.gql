@@ -1,0 +1,35 @@
+query Companies($id: ID!) {
+  company(id: $id) {
+    id
+    company_name
+    company_logo {
+      url
+    }
+    title
+		full_description
+    content {
+      id
+      title
+      body_paragraph 
+      image {
+        url
+      }
+      image_caption
+    }
+    social {
+      id
+      fab_fas
+      fa_name
+      link
+      isHover
+    }
+    card {
+      id
+      title
+      list {
+        id
+        list
+      }
+    }
+  }
+}

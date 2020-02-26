@@ -196,40 +196,46 @@ export default {
               bullets: [
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "7 Hours work day, 5 days a week"},
+                  text: "7 Hours work day, 5 days a week"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "No overtime"},
+                  text: "No overtime"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Friendly and International Environment"},
+                  text: "Friendly and International Environment"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "International Clients"},
+                  text: "International Clients"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Free snacks and drinks"},
+                  text: "Free snacks and drinks"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Health insurance"}
+                  text: "Health insurance"
+                }
               ]
             }
           ]
@@ -341,40 +347,46 @@ export default {
               bullets: [
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "7 Hours work day, 5 days a week"},
+                  text: "7 Hours work day, 5 days a week"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "No overtime"},
+                  text: "No overtime"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Friendly and International Environment"},
+                  text: "Friendly and International Environment"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "International Clients"},
+                  text: "International Clients"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Free snacks and drinks"},
+                  text: "Free snacks and drinks"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Health insurance"}
+                  text: "Health insurance"
+                }
               ]
             }
           ]
@@ -385,7 +397,8 @@ export default {
           location: "Phyathai, Bangkok",
           logo: require(`@/assets/images/logo_nimble.png`),
           title: "Company culture at Nimble.",
-          description:"We are a team of software engineers, designers and product managers building outstanding web and mobile applications for companies of all sizes, from 1-person startups to Fortune 500 companies.  If you want to grow together, work on challenging products used by millions of users and enjoy using the best tools and practices, Nimble is the right place for you! We keep our recruitment process practical and straightforward. To learn more about how we work, check our handbook named Compass, Github organisation and Medium account. Want to see what we have built? Check our Dribbble and Behance accounts.",
+          description:
+            "We are a team of software engineers, designers and product managers building outstanding web and mobile applications for companies of all sizes, from 1-person startups to Fortune 500 companies.  If you want to grow together, work on challenging products used by millions of users and enjoy using the best tools and practices, Nimble is the right place for you! We keep our recruitment process practical and straightforward. To learn more about how we work, check our handbook named Compass, Github organisation and Medium account. Want to see what we have built? Check our Dribbble and Behance accounts.",
           socials: [
             {
               fab_fas: "fab",
@@ -485,44 +498,50 @@ export default {
               bullets: [
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "7 Hours work day, 5 days a week"},
+                  text: "7 Hours work day, 5 days a week"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "No overtime"},
+                  text: "No overtime"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Friendly and International Environment"},
+                  text: "Friendly and International Environment"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "International Clients"},
+                  text: "International Clients"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Free snacks and drinks"},
+                  text: "Free snacks and drinks"
+                },
                 {
                   icon: {
-                    fab_fas: 'fas',
-                    fa_name: 'map-marker-alt'
+                    fab_fas: "fas",
+                    fa_name: "map-marker-alt"
                   },
-                  text: "Health insurance"}
+                  text: "Health insurance"
+                }
               ]
             }
           ]
-        },
+        }
       ]
     };
   },
@@ -530,6 +549,11 @@ export default {
     company() {
       return this.companies.find(company => company.id === this.id);
     }
+  },
+  head() {
+    return {
+      title: this.company.company_name + " - GrowthValey"
+    };
   }
 };
 </script>

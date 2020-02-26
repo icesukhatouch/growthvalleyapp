@@ -1,0 +1,12 @@
+query Companies {
+  companies{
+    id
+    publish
+    company_name
+    location
+    short_description
+    company_logo {
+      url
+    }
+  }
+}

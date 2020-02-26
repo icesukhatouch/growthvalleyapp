@@ -1,18 +1,44 @@
 ._bgcl-secondary {
-    background-color: $secondary !important; 
+  background-color: $secondary !important;
 }
 ._bgcl-tertiary {
-    background-color: $tertiary !important; 
+  background-color: $tertiary !important;
 }
 ._ffml-roboto {
-    font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 ._ffml-kanit {
-    font-family: 'Kanit', sans-serif !important;
+  font-family: "Kanit", sans-serif !important;
 }
 
-@media(min-width: $widescreen) {
-    ._w-200px {
-        width: 200px;
-    }
+@media (min-width: $widescreen) {
+  ._w-200px {
+    width: 200px;
+  }
+}
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+._bg-gradient1 {
+  background: rgb(81, 82, 201);
+  background: linear-gradient(
+    135deg,
+    rgba(81, 82, 201, 1) 0%,
+    rgba(108, 177, 189, 1) 100%
+  );
+}
+
+body {
+  background: rgb(81, 82, 201);
+  background: linear-gradient(
+    135deg,
+    rgba(81, 82, 201, 1) 0%,
+    rgba(108, 177, 189, 1) 100%
+  );
 }
