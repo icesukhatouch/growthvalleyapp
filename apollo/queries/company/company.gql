@@ -2,10 +2,10 @@ query Companies($id: ID!) {
   company(id: $id) {
     id
     company_name
+    location
     company_logo {
       url
     }
-    title
 		full_description
     content {
       id
@@ -18,17 +18,20 @@ query Companies($id: ID!) {
     }
     social {
       id
-      fab_fas
-      fa_name
+      icon {
+        fab_fas
+        fa_name
+      }
+ 
       link
       isHover
     }
     card {
       id
       title
-      list {
+      bullet {
         id
-        list
+        text
       }
     }
   }

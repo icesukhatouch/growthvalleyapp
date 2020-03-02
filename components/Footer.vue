@@ -1,18 +1,14 @@
 <template>
   <div>
-    <footer class="footer _bgcl-tpr _tal-ct _pdbt-48px">
+    <footer
+      :class="['footer', $props.isPrimary ? '_bgcl-tpr' : '_bg-gradient2' , '_tal-ct', '_pdbt-48px']"
+    >
       <div class="_dp-f _jtfct-ct alit-ct _fdrt-cl">
         <figure class="_dp-f _jtfct-ct _alct-ct">
-          <img style="width:10rem;" src="~/assets/images/gv_logo.png" alt="" />
+          <img style="width:10rem;" src="~/assets/images/gv_logo.png" alt />
         </figure>
         <div class="_mgv-16px">
-          <a
-            target="_blank"
-            :href="val.link"
-            v-for="(val, i) in socials"
-            :key="i"
-            class="_mgh-8px"
-          >
+          <a target="_blank" :href="val.link" v-for="(val, i) in socials" :key="i" class="_mgh-8px">
             <font-awesome-icon
               :icon="[val.fab_fas, val.fa_name]"
               :class="[val.isHover ? '_cl-gray-400' : '_cl-white']"
@@ -33,9 +29,7 @@
               '_mgh-24px',
               val.isHover ? '_cl-gray-400' : '_cl-white'
             ]"
-          >
-            {{ val.name }}
-          </nuxt-link>
+          >{{ val.name }}</nuxt-link>
         </div>
         <p class="_mgv-16px _cl-white _fs-8">GrowthValley ltd.</p>
       </div>
@@ -45,6 +39,9 @@
 
 <script>
 export default {
+  props: {
+    isPrimary: true
+  },
   data() {
     return {
       navBarItems: [
@@ -73,13 +70,13 @@ export default {
         },
         {
           fab_fas: "fab",
-          fa_name: "facebook",
+          fa_name: "twitter",
           link: "www.facebook.com/growthvalley",
           isHover: false
         },
         {
-          fab_fas: "fab",
-          fa_name: "facebook",
+          fab_fas: "fas",
+          fa_name: "envelope",
           link: "www.facebook.com/growthvalley",
           isHover: false
         }

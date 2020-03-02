@@ -1,8 +1,8 @@
 <template>
-  <div class="_bg-gradient1">
-    <Nav :isPrimary="true" />
+  <div class="_bgcl-white">
+    <Nav :isPrimary="false" />
     <nuxt />
-    <Footer :isPrimary="true" />
+    <Footer :isPrimary="false" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import Footer from "~/components/Footer";
 export default {
   data() {
     return {
-      isPrimary: true
+      isPrimary: false
     };
   },
   components: {

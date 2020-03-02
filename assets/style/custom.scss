@@ -33,12 +33,15 @@
     rgba(108, 177, 189, 1) 100%
   );
 }
+._bg-gradient2 {
+  background: rgb(241,111,74);
+background: linear-gradient(90deg, rgba(241,111,74,1) 15%, rgba(77,55,221,1) 85%);
+}
 
-body {
-  background: rgb(81, 82, 201);
-  background: linear-gradient(
-    135deg,
-    rgba(81, 82, 201, 1) 0%,
-    rgba(108, 177, 189, 1) 100%
-  );
+._ltspc-05px {
+  letter-spacing: 0.5px;
+}
+
+._ltspc-025px {
+  letter-spacing: 0.25px;
 }

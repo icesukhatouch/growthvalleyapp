@@ -1,5 +1,5 @@
-query Companies {
-  companies{
+query Companies($company_name: String!) {
+  companies(where: {company_name_contains: $company_name}){
     id
     publish
     company_name

@@ -1,10 +1,12 @@
 <template>
   <div>
-    <nav class="navbar _bgcl-tpr _pdv-24px _pdh-64px">
-      <div class="navbar-brand  _bgcl-tpr">
-        <div class="navbar-item  _bgcl-tpr">
+    <nav
+      :class="['navbar', isPrimary ? '_bgcl-tpr' : '_bg-gradient2' , '_pdv-16px', '_pdh-8px', '_pdh-64px-md']"
+    >
+      <div :class="['navbar-brand' ,'_bgcl-tpr']">
+        <div :class="['navbar-item' , '_bgcl-tpr']">
           <nuxt-link to="/">
-            <img src="~/assets/images/gv_logo.png" alt="GVlogo" />
+            <img src="~/assets/images/gv_logo.png" alt="GVlogo" class="_mxw-70pct" />
           </nuxt-link>
         </div>
         <a
@@ -15,7 +17,8 @@
             '_dp-n-md',
             '_jtfct-ct',
             '_alit-ct',
-            { 'is-active': toggleClass }
+            { 'is-active': toggleClass },
+            '_cl-white'
           ]"
           role="button"
           aria-label="menu"
@@ -26,10 +29,7 @@
           <font-awesome-icon :icon="['fas', 'bars']" />
         </a>
       </div>
-      <div
-        id="navbar-items"
-        :class="['navbar-menu', { 'is-active': toggleClass }]"
-      >
+      <div id="navbar-items" :class="['navbar-menu', { 'is-active': toggleClass }]">
         <div class="navbar-end">
           <div
             class="navbar-item _mgh-16px"
@@ -40,16 +40,16 @@
           >
             <nuxt-link
               :to="val.link"
-              :class="[ val.hover ? '_cl-gray-400' : '_cl-white']"
-              >{{ val.name }}</nuxt-link
-            >
+              :class="[ toggleClass ? '_cl-black' : val.hover ? '_cl-gray-400' : '_cl-white' ]"
+            >{{ val.name }}</nuxt-link>
           </div>
           <div class="navbar-item _mgl-16px">
             <div class="buttons">
-              <div class="button _bgcl-tpr _bdrd-0px">
-                <nuxt-link to="/signin" class="_cl-white"
-                  >Sign-in</nuxt-link
-                >
+              <div class="button _bgcl-tpr _bdrd-0px _pdh-24px">
+                <nuxt-link
+                  to="/signin"
+                  :class="[ toggleClass ? '_cl-black' : '_cl-white' ]"
+                >Sign-in</nuxt-link>
               </div>
             </div>
           </div>
@@ -61,6 +61,9 @@
 
 <script>
 export default {
+  props: {
+    isPrimary: true
+  },
   data() {
     return {
       toggleClass: false,
@@ -80,7 +83,6 @@ export default {
           hover: false,
           link: "/media"
         }
-
       ]
     };
   },
@@ -91,3 +93,11 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .navbar-burger {
+    &:hover {
+      background-color: none;
+    }
+  }
+</style>
